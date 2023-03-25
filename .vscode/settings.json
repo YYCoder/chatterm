@@ -1,0 +1,68 @@
+{
+  "files.associations": {
+    ".babelrc": "json",
+    ".eslintrc": "jsonc",
+    ".eslintrc*.json": "jsonc",
+    "Procfile*": "shellscript",
+    "README": "markdown"
+  },
+  "search.useIgnoreFiles": true,
+  "search.exclude": {
+    ".vscode": true,
+    "**/dist": true,
+    "**/yarn.lock": true,
+    "**/package-lock.json": true,
+    "**/*.log": true,
+    "**/*.pid": true,
+    "**/.git": true,
+    "**/node_modules": true
+  },
+  "files.eol": "\n",
+  "editor.rulers": [
+    80,
+    120
+  ],
+  "json.format.enable": true,
+  "javascript.validate.enable": true,
+  "typescript.validate.enable": true,
+  "typescript.referencesCodeLens.enabled": false,
+  "typescript.implementationsCodeLens.enabled": true,
+  "typescript.updateImportsOnFileMove.enabled": "always", // 默认就是 always
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true,
+    "source.organizeImports": true,
+  },
+  "[json]": {
+    "editor.tabSize": 4,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[less]": {
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[css]": {
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "[jsonc]": {
+    "editor.tabSize": 4,
+    "editor.formatOnType": true,
+    "editor.formatOnPaste": true,
+    "editor.formatOnSave": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "eslint.nodePath": "./node_modules",
+  "eslint.lintTask.enable": true,
+  "eslint.probe": [
+    "javascript",
+    "typescript",
+  ],
+  "cSpell.diagnosticLevel": "Hint",
+  "prettier.trailingComma": "all",
+  "prettier.printWidth": 80,
+  "prettier.arrowParens": "avoid",
+}
