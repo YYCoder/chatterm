@@ -35,10 +35,12 @@ yarn global add chatterm
 
 ## Usage
 ### Basic
-[](./docs/basic.mp4)
+https://user-images.githubusercontent.com/22005951/227783447-1c7485f0-ca0b-42ac-992c-be7cfa92d08c.mp4
 
 ### Multi-Line Input
-[](./docs/multi-line.mp4)
+use prefix `/` to find all the available commands, currently only support `/mode` to select multi-line input.
+
+https://user-images.githubusercontent.com/22005951/227783492-998a5047-876a-49a6-99c6-b3847b9cb8f4.mp4
 
 
 ## Under the hood
