@@ -6,8 +6,12 @@
 </center>
 <hr>
 
+[中文文档](./README.CN.md)
+
 ## Prerequisite
-you must have an openai account.
+you must have an openai account. you can use this link [https://chat.openai.com/auth/login](https://chat.openai.com/auth/login) to sign up.
+
+then, grab following two keys from the web UI:
 
 * **API key**: grab it here, https://platform.openai.com/account/api-keys.
 
@@ -20,12 +24,6 @@ export ORGANIZATION="YOUR_ORGANIZATION"
 export OPENAI_API_KEY="YOUR_OPENAI_API_KEY"
 ```
 
-and you are all set! just run `chatterm`, have fun!
-
-```bash
-chatterm
-```
-
 ## Install
 ```bash
 npm i -g chatterm
@@ -33,12 +31,21 @@ npm i -g chatterm
 yarn global add chatterm
 ```
 
+and you are all set! just run `chatterm`, have fun!
+
+```bash
+chatterm
+```
+
+
 ## Usage
 ### Basic
 https://user-images.githubusercontent.com/22005951/227783447-1c7485f0-ca0b-42ac-992c-be7cfa92d08c.mp4
 
 ### Multi-Line Input
 use prefix `/` to find all the available commands, currently only support `/mode` to select multi-line input.
+
+after select `multi-line` mode, for mac and linux, it will use `vim` as default editor, so it required some basic knowledge about `vim`(at least know how to save and quit😏), for windows, it will use `notepad` as default editor.
 
 https://user-images.githubusercontent.com/22005951/227783492-998a5047-876a-49a6-99c6-b3847b9cb8f4.mp4
 
