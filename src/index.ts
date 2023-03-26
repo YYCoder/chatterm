@@ -1,3 +1,6 @@
+#! /usr/bin/env node
+
+/* eslint-disable node/shebang */
 import chalk from 'chalk';
 import inquirer from 'inquirer';
 import inquirerPrompt from 'inquirer-autocomplete-prompt';
@@ -156,7 +159,7 @@ const generateRespContent = (
 ${marked(content) ?? ''}${tokenContent}`;
 };
 
-const main = async () => {
+export const main = async () => {
     try {
         init();
     } catch (err) {

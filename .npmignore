@@ -1,0 +1,6 @@
+src
+docs
+.vscode
+.editorconfig
+.eslintignore
+.eslintrc.js
