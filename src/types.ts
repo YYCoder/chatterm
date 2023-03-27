@@ -12,6 +12,13 @@ export type Prompt = {
     type: PromptType;
     prefix: string;
     choices?: string[];
-    request?: string | null;
+    request?: InquirerAnswer;
     response?: ChatCompletionResponseMessage | null;
+};
+
+export type InquirerAnswer = boolean | string | number;
+
+export type InquirerAnswerData = {
+    name: string;
+    answer: InquirerAnswer;
 };
