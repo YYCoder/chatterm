@@ -12,6 +12,9 @@ import { BaseController } from './base.controller';
 import {
     DEFAULT_ERR_MSG,
     ERROR_TOKEN_COUNT,
+    MODE_CMD,
+    MODE_MULTI_LINE,
+    MODE_SINGLE_LINE,
     WARN_TOKEN_COUNT
 } from './constants';
 import { EventBus } from './event-bus';
@@ -106,19 +109,19 @@ export class ChatController extends BaseController {
         // update the prompt
         const prompt = this.promptMap.get(promptId);
         if (!prompt) throw new Error(DEFAULT_ERR_MSG);
-        if (answer === '/mode') {
+        if (answer === MODE_CMD) {
             // select input type
             this.pushPrompt({
                 id: uuid(),
                 type: PromptType.List,
                 prefix: 'please select an input type',
-                choices: ['single-line', 'multi-line']
+                choices: [MODE_SINGLE_LINE, MODE_MULTI_LINE]
             });
             return;
-        } else if (answer === 'single-line') {
+        } else if (answer === MODE_SINGLE_LINE) {
             this.pushPrompt();
             return;
-        } else if (answer === 'multi-line') {
+        } else if (answer === MODE_MULTI_LINE) {
             this.pushPrompt({
                 id: uuid(),
                 type: PromptType.MultiLine,
